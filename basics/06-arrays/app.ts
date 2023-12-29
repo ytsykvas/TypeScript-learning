@@ -1,7 +1,3 @@
-// const person: {
-//   name: string;
-//   age: number;
-// } = {
 const person = {
   name: 'Maximilian',
   age: 30,
@@ -9,11 +5,12 @@ const person = {
 };
 
 let favoriteActivities: string[];
+// any[] - в масиві можуть бути будь які типи
 favoriteActivities = ['Sports'];
 
 console.log(person.name);
 
 for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
-  // console.log(hobby.map()); // !!! ERROR !!!
+  // виводимо всі person.hobbies капсом
 }
